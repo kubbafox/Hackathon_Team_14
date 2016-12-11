@@ -30,6 +30,15 @@ body {
 	text-align: center;
 }
 
+h3.back {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3.back a {
+	color: #D62058;
+}
+
 .component-heading {
 	margin-bottom: 50px;
 	margin-top: 50px;

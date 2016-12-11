@@ -8,7 +8,7 @@ body {
 
 .button-container {
 	height: 200px;
-	margin: 50px auto 0;
+	margin: 25px auto 0;
 	width: 300px;
 }
 
@@ -26,8 +26,8 @@ h1 {
 .button-waves {
 	-webkit-appearance: none;
 	appearance: none;
-	background-color: #FE5658;
-	border: 2px solid #fe4328;
+	background-color: #D62058;
+	border: 2px solid #d61564;
 	box-sizing: border-box;
 	color: #fff;
 	cursor: pointer;

@@ -8,6 +8,10 @@ body {
 	width: 100%;
 }
 
+.container.site-branding {
+	margin: 0 auto;
+}
+
 .inner-container {
 	margin-bottom: 100px;
 }
