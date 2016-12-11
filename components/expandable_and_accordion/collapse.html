@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-`
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://kubbafox.github.io/Hackathon_Team_14/assets/main.css">
 </head>
 
 <body>
+
+<header class="main-header">
+    <div class="container site-branding">
+        <h1>Hackathon: Team 14 - Project 2</h1>
+    </div>
+</header>
+
+
+<h2>Accordion/Collapsible</h2>
+<h3 class="back"><a href="../../">Back</a></h3>
 
 <div class="menu">
     Expandable
@@ -112,10 +122,16 @@
     body {
         font-family: 'Roboto Slab', serif;
         font-size: 85%;
-        margin-top: 30px;
+
     }
 
+    h2{
+        text-align: center;
+    }
+    
+
     .menu {
+        margin-top: 30px;
         display: block;
         font-size: 16px;
         font-family: 'Roboto';
@@ -126,6 +142,7 @@
     }
 
     .sub-container {
+        margin-top: 30px;
         margin-right: 100px;
         margin-bottom: 100px;
         float: left;
@@ -165,7 +182,7 @@
     .expandable + input:checked + div {
         visibility: visible;
         padding: 30px 20px;
-        height: 150px;
+        height: 130px;
         transition: height 0.5s ease-out, color 1s ease-in-out;
         text-align: left;
         border-bottom: 1px solid #ddd;
