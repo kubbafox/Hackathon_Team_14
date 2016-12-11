@@ -2,6 +2,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.container.site-branding {
+	margin: 0 auto;
+}
+
 .button-container {
 	height: 200px;
 	margin: 50px auto 0;
