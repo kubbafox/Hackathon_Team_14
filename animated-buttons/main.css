@@ -1,0 +1,171 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	height: 200px;
+	margin: 50px auto 0;
+	width: 300px;
+}
+
+.inner-container {
+	margin-bottom: 100px;
+}
+
+h1 {
+	margin-bottom: 50px;
+}
+
+/*
+ * Base Button Styles
+ */
+.button-waves {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #FE5658;
+	border: 2px solid #fe4328;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 2.875;
+	height: 50px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	vertical-align: baseline;
+	width: 100%;
+}
+
+.button-waves::moz-focus-inner {
+	border: 0;
+	padding: 0;
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+
+.button-waves:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*
+ * Center Out Square
+ */
+.center-out:before {
+	animation: wave-center-out .750s cubic-bezier(.28,1.03,.51,.96) 0.1s forwards;
+}
+
+/*
+ * Center Out Circle
+ */
+.center-out-circle:before {
+	animation: wave-center-out-circle .750s cubic-bezier(.28,1.03,.51,.80) 0.1s forwards;
+	border-radius: 50%;
+	height: 300px;
+	transform-origin: center center;
+	width: 110%;
+	top: -125px;
+	left: -10px;
+	transform: translate(-50%, -50%);
+}
+
+/*
+ * Left to Right
+ */
+.left-to-right:before {
+	animation: wave-left-to-right .750s cubic-bezier(.28, 1.03, .51, .96) 0.1s forwards;
+	transform-origin: left center;
+}
+
+/*
+ * Right To Left
+ */
+.right-to-left:before {
+	animation: wave-right-to-left .750s cubic-bezier(.28,1.03,.51,.96) 0.1s forwards;
+	transform-origin: right center;
+}
+
+/*
+ *	Animation: Center Out Square
+ */
+@keyframes wave-center-out {
+	0% {
+		background: rgba(255,255,255, 0.7);
+		opacity: 0;
+		transform: scale(0);
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+
+/*
+ *	Animation: Left To Right
+ */
+@keyframes wave-left-to-right {
+	0% {
+		background: rgba(255,255,255, 0.7);
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		background: rgba(255,255,255, 0);
+		opacity: 0;
+		transform: scaleX(1);
+	}
+}
+
+/*
+ *	Animation: Right To Left
+ */
+@keyframes wave-right-to-left {
+	0% {
+		background: rgba(255,255,255, 0.7);
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		background: rgba(255,255,255, 0);
+		opacity: 0;
+		transform: scaleX(1);
+	}
+}
+
+/*
+ *	Animation: Center Out Circle
+ */
+@keyframes wave-center-out-circle {
+	0% {
+		background: rgba(255,255,255, 0.7);
+		opacity: 0;
+		transform: scale(0);
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		background: rgba(255,255,255, 0);
+		opacity: 0;
+		transform: scale(1);
+	}
+}
