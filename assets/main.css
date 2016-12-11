@@ -1,0 +1,82 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+.main-header {
+	align-items: center;
+	background-color: #D62058;
+	color: #FFF;
+	display: flex;
+	height: 100px;
+	justify-content: space-around;
+}
+
+.main-header h1 {
+	margin: 0;
+	text-align: center;
+}
+
+.component-heading {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.container.menu {
+	display: flex;
+	justify-content: center;
+}
+
+.component-nav {
+	max-width: 400px;
+	width: 100%;
+}
+
+.component-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+
+.component-list-item {
+	border: solid #D62058;
+	border-width: 1px 1px 0 1px;
+	text-align: center;
+}
+
+.component-list-item:last-child {
+	border-bottom: 1px solid #D62058;
+}
+
+.component-list-item a {
+	color: #D62058;
+	font-size: 24px;
+	display: inline-block;
+	padding: 25px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background .2s ease;
+	width: 100%;
+}
+
+.component-list-item a:hover {
+	color: #FFF;
+	background-color: #D62058;
+}
